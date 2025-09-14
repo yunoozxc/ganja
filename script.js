@@ -16,7 +16,7 @@ function typeLine() {
     loadingScreen.classList.add("fade-out");
 
     loadingScreen.addEventListener("animationend", () => {
-      window.location.href = "main.html"; // redirect after fade
+      window.location.href = "main/"; // redirect after fade
     });
 
     return;
@@ -49,4 +49,5 @@ function typeLine() {
 }
 
 typeLine();
+
 
