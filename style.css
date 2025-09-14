@@ -10,6 +10,7 @@ body {
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
+  user-select: none;
 }
 
 /* Transparent static noise overlay */
@@ -140,4 +141,5 @@ body::after {
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
+
 }
