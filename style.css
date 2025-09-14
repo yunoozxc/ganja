@@ -13,6 +13,10 @@ body {
   user-select: none;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 /* Transparent static noise overlay */
 body::after {
   content: "";
@@ -143,3 +147,4 @@ body::after {
   to { opacity: 0; }
 
 }
+
