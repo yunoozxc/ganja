@@ -16,7 +16,7 @@ function typeLine() {
     loadingScreen.classList.add("fade-out");
 
     loadingScreen.addEventListener("animationend", () => {
-      window.location.href = "fame/"; // redirect after fade
+      window.location.href = "fame/";
     });
 
     return;
@@ -49,3 +49,21 @@ function typeLine() {
 }
 
 typeLine();
+
+// Disable right-click
+document.addEventListener("contextmenu", event => event.preventDefault());
+
+document.onkeydown = function(e) {
+  // F12
+  if (e.keyCode == 123) {
+    return false;
+  }
+  // Ctrl+Shift+I
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+    return false;
+  }
+  // Ctrl+U
+  if (e.ctrlKey && e.keyCode == 85) {
+    return false;
+  }
+};
