@@ -114,3 +114,6 @@ document.onkeydown = function(e) {
     return false;
   }
 };
+
+document.addEventListener("dragstart", event => event.preventDefault());
+
