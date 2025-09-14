@@ -16,6 +16,10 @@ body {
   user-select: none;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 /* Blurred background */
 body::before {
   content: "";
@@ -233,4 +237,5 @@ body::before {
   max-width: 300px;
   opacity: 0.8;
 }
+
 
