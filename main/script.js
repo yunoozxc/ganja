@@ -89,12 +89,12 @@ typeWriter();
 
 // Click to continue
 intro.addEventListener("click", () => {
-  intro.classList.add("fade-out"); // trigger fade-out
+  intro.classList.add("fade-out");
 
   setTimeout(() => {
-    intro.style.display = "none";  // fully remove after fade
-    content.style.display = "block"; // show site
+    intro.style.display = "none";
     music.play().catch(err => console.log("Autoplay blocked:", err));
-  }, 1000); // match transition duration
+  }, 1000);
 });
+
 
