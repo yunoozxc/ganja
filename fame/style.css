@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  user-select: none;
   padding: 0;
   color: white;
   font-family: monospace, sans-serif;
@@ -13,11 +14,6 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  user-select: none;
-}
-
-img {
-  -webkit-user-drag: none;
 }
 
 /* Blurred background */
@@ -45,7 +41,7 @@ body::before {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  color: rgb(116, 4, 131);
+  color: rgb(255, 255, 255);
   font-size: 24px;
   cursor: pointer;
   transition: opacity 1s ease; /* smooth fade */
@@ -83,10 +79,10 @@ body::before {
 /* Header */
 .header {
   margin-top: 30px;
-  color: rgb(83, 4, 129);
+  color: rgb(255, 255, 255);
   font-size: 9px;
   font-weight: bold;
-  text-shadow: 0 0 8px rgb(83, 4, 129);
+  text-shadow: 0 0 8px rgb(255, 255, 255);
 }
 
 
@@ -118,8 +114,8 @@ body::before {
 .hall-title {
   margin: 30px 0 20px;
   font-size: 20px;
-  color: rgb(83, 4, 129);
-  text-shadow: 0 0 10px rgb(83, 4, 129);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .hall {
@@ -237,6 +233,3 @@ body::before {
   max-width: 300px;
   opacity: 0.8;
 }
-
-
-
