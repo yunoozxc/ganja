@@ -117,3 +117,22 @@ document.onkeydown = function(e) {
 
 document.addEventListener("dragstart", event => event.preventDefault());
 
+const profileLinks = {
+  "703440528657875005": "../yuno",
+  "1307593274814500926": "../profiles/liya",
+  "751257222792872056": "../profiles/akira",
+  "616961997300432907": "../profiles/mika",
+  "1260661874895224892": "../profiles/rin",
+  "529647572361674783": "../profiles/kai"
+};
+
+// Make each status card clickable
+document.querySelectorAll(".status-card").forEach(card => {
+  card.style.cursor = "pointer"; // show hand cursor
+  card.addEventListener("click", () => {
+    const userId = card.getAttribute("data-user");
+    if (profileLinks[userId]) {
+      window.location.href = profileLinks[userId];
+    }
+  });
+});
