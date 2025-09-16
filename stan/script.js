@@ -66,9 +66,9 @@ ws.onmessage = ({ data }) => {
 
 
 const bioTexts = [
-  "Luv by Yuno",
+  "stan luvs you",
   "killing snitch",
-  "i luv liya",
+  "introducing ganja",
   "discord.gg/revshit"
 ];
 
@@ -155,4 +155,5 @@ fetch("https://api.countapi.xyz/hit/yuno-profile/views")
   .then(res => res.json())
   .then(data => {
     document.getElementById("view-counter").textContent = data.value;
+
   });
